@@ -1,0 +1,46 @@
+package graphics;
+
+import java.util.*;
+interface Shapes{
+    void area(int m,int n);
+	void perimeter(int m,int n,int o);
+}
+class Triangle implements Shapes{
+	public void area(int m,int n) {
+		System.out.println("Area of triangle:"+(0.5*m*n));
+	}
+	public void perimeter(int m,int n,int o) {
+		System.out.println("Perimeter of triangle:"+(m+n+o));
+	}
+}
+class Circle implements Shapes{
+	public void area(int m,int n) {
+		System.out.println("Area of Circle:"+(3.14*m*m));
+	}
+	public void perimeter(int m,int n,int o) {
+		System.out.println("Perimeter of circle:"+(2*(3.14*m)));
+	}
+}
+public class SHAPE {
+
+	public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Triangle T=new Triangle();
+		Circle1 C=new Circle1();
+        
+        System.out.println("enter the side of the triangle:");
+        int s=sc.nextInt();
+        System.out.println("enter the base of the triangle:");
+        int b=sc.nextInt();
+        System.out.println("enter the height of the triangle:");
+        int h=sc.nextInt();
+        T.area(s, b);
+        T.perimeter(s, b, h);
+        
+        System.out.println("enter the radius of the triangle:");
+        int r=sc.nextInt();
+        T.area(r,s);
+        C.perimeter(r,s,b);
+}
+}
+

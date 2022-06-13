@@ -1,0 +1,42 @@
+package graphics;
+
+import java.util.*;
+public class box {
+	  int l,b;
+	   box1(int length,int breadth){
+		this.l=length;
+		this.b=breadth;
+	}
+	public class box3d extends box{
+		int hei;
+		box3d(int length,int breadth,int height){
+			super(length,breadth);
+			this.hei=height;
+		}
+	void display(){
+		System.out.println("enter the length:"+l);
+		System.out.println("enter the breadth:"+b);
+		System.out.println("enter the height:"+hei);
+	}
+	}
+
+
+public class Box{
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc =new Scanner(System.in);
+		Box B = new Box();
+		System.out.println("enter the length and the breadth:");
+		int l=sc.nextInt();
+		int b=sc.nextInt();
+		sc.nextLine();
+		System.out.println("Area of the box:"+(.5*l*b));
+        System.out.println("enter the height");
+        int h=sc.nextInt();
+        System.out.println("Volume of the box is:"+(l*b*h));
+
+	}
+	}
+}
+
