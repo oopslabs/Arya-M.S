@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 public class q1{
 	public static void main(String[] args) {
-		File file = new File("/home/arun/Desktop/Data/sem 2/java/qq");
+		File file = new File("/home/arya/Desktop/Data/sem 2/java/qq");
 		String[] list = file.list();
 		for(String str : list){
 			System.out.println(str);
